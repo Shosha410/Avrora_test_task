@@ -1,0 +1,18 @@
+# Общие исключения
+.idea/           # IntelliJ IDEA project files
+*.pyc            # Скомпилированные файлы Python
+__pycache__/    # Каталог с кэшем Python
+*.log            # Файлы логов
+*.swp            # Файлы подкачки vim
+*~               # Резервные копии файлов
+venv/            # Виртуальное окружение Python
+.venv/           # Виртуальное окружение Python (если используется)
+env/             # Виртуальное окружение Python (если используется)
+.env             # Файл переменных окружения
+
+# Исключения, специфичные для проекта
+send_results/allure-results/*  # Результаты allure (но сам каталог можно оставить)
+send_results/allure-report/*   # Отчет allure (но сам каталог можно оставить)
+send_results/logs/*         # Логи тестов (но сам каталог можно оставить)
+config/config.ini          # Файл конфигурации (если содержит секреты)
+*.DS_Store         # Файлы macOS Desktop Services Store
